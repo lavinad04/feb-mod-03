@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Form</title>
+<style>
+    #signupForm{
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:cornsilk;
+    }
+  .error {
+    color: red;
+  }
+  .success {
+    color: green;
+  }
+.btn{
+    padding:4px 30px 4px 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+#email,#password{
+    margin-top: 10px;
+    border: 1px solid black;
+  border-radius: 3px;
+  width: 500px;
+  height: 30px;
+}
+</style>
+</head>
+<body>
+
+<form id="signupForm">
+  <div>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" required>
+    <span id="emailError" class="error"></span>
+  </div><br>
+  <div>
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password" required>
+    <span id="passwordError" class="error"></span>
+    <span id="successMessage" class="success"></span>
+  </div><br>
+  <button class="btn" type="submit">Submit</button>
+</form>
+
+<script src="./srcipt.js"> </script>
+
+</body>
+</html>
